@@ -10,14 +10,15 @@ on:
       - development
       - master
 jobs:
-    build:
+    run-tests:
         runs-on: ubuntu-latest
+        name: java unit tests
         container:
-          image: compose:latest
+          image: composer:latest
           volumes:
-            - chip8java:/chip8
-          steps:
-            - name: Running composer install
-              run: composer install
-            - name: Running gradle test
-              run: ./gradlew test
+            - my-app:/app
+        steps:
+          - name: Running composer install
+            run: composer install
+          - name: Running gradle test
+            run: ./gradlew test
