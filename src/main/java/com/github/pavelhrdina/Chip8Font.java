@@ -1,5 +1,8 @@
-package com.github.pavelhrdina.util;
+package com.github.pavelhrdina;
 
+/**
+ * represents the font in hexadecimal values for the Chip-8 interpreter.
+ */
 public class Chip8Font {
     /**
      * Font definition for the Chip-8 interpreter.
