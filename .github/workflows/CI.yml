@@ -1,0 +1,23 @@
+# cerete a new github action that will build and test the project using the gradle wrapper and docker
+name: CI
+on:
+  push:
+    branches:
+      - development
+      - master
+  pull_request:
+    branches:
+      - development
+      - master
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        container:
+          image: compose:latest
+          volumes:
+            - chip8java:/chip8
+          steps:
+            - name: Running composer install
+              run: composer install
+            - name: Running gradle test
+              run: ./gradlew test
