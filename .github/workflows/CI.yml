@@ -13,9 +13,14 @@ jobs:
         runs-on: ubuntu-latest
         name: java unit tests
         steps:
-          - name: Checkout code
+          - name : Checkout code
             uses: actions/checkout@v4
-          - name: Building docker image
-            run: docker build -t local .
-          - name: Running gradle test
-            run: docker run -v $PWD:/app -w /app local ./gradlew test
+          - name: Set up java
+            uses: actions/setup-java@v4
+            with:
+              distribution: 'adopt'
+              java-version: 11
+          - name: Setup gradle
+            uses: gradle/gradle-build-action@v3
+          - name: Run tests
+            run: ./gradlew test
