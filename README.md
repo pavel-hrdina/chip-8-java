@@ -4,7 +4,10 @@
 
 This is a project I started to learn more about emulation and the CHIP-8
 system. The project is written in Java using the LWJGL library for graphics,
-input and audio handling.
+input and audio handling. The goal is to creat a simple and easy to use CHIP-8
+interpreter that can run most CHIP-8 games, I just want it to work, and I don't 
+care about code style, the only requirement is that the code is readable and 
+easy to understand.
 
 ## Building and running the project
 
