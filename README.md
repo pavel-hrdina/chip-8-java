@@ -2,9 +2,9 @@
 
 ![Screenshot](screenshot.png)
 
-This is a project I started to learn more about emulation and the chip 8 
-system. The project is written in Java using the libgdx library for graphics 
-and input handling.
+This is a project I started to learn more about emulation and the CHIP-8
+system. The project is written in Java using the LWJGL library for graphics,
+input and audio handling.
 
 ## Building and running the project
 
