@@ -1,4 +1,4 @@
-# A chip 8 emulator written in Java
+# A CHIP-8 interpreter written in Java
 
 ![Screenshot](screenshot.png)
 
