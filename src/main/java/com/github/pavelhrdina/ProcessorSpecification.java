@@ -1,6 +1,6 @@
 package com.github.pavelhrdina;
 
-public class ProcesorSpecification {
+public class ProcessorSpecification {
     /**
      * The Chip-8 has 35 opcodes which are all two bytes long and stored big-endian.
      */
