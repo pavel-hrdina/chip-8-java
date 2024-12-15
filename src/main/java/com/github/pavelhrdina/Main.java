@@ -9,6 +9,10 @@
 package com.github.pavelhrdina;
 
 
+import com.github.pavelhrdina.core.Chip8Context;
+
+import javax.crypto.Cipher;
+
 // application entry point
 public class Main {
     /**
@@ -16,6 +20,6 @@ public class Main {
      * @param args The command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(Chip8Font.fontDefinition(0));
+        System.out.println(Chip8Context.getMemoryInKilobytes());
     }
 }
